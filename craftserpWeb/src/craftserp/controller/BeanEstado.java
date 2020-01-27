@@ -32,7 +32,13 @@ public class BeanEstado implements Serializable {
 
 	public void actionListenerInsertarEstado() {
 		try {
+<<<<<<< HEAD
 			managerestado.insertarEstado(estado);
+=======
+
+			managerestado.insertarEstado(estado);
+			//managerestado.insertarEstado(
+>>>>>>> 1df69acb9f5b2ac8328fbe3f206b67b6b2534082
 			//managerestado.insertarEstado(
 			listaestado = managerestado.findAllEstados();
 			estado = new PrdEstado();
