@@ -33,6 +33,11 @@ public class BeanEstado implements Serializable {
 	public void actionListenerInsertarEstado() {
 		try {
 			managerestado.insertarEstado(estado);
+<<<<<<< HEAD
+=======
+			//managerestado.insertarEstado(
+			//managerestado.insertarEstado(
+>>>>>>> 04b4071be70493e290c9cc05d387c6d2f147b9f6
 			listaestado = managerestado.findAllEstados();
 			estado = new PrdEstado();
 			JSFUtil.crearMensajeInfo("Datos de estado insertados");
@@ -91,37 +96,6 @@ public class BeanEstado implements Serializable {
 		this.estadoseleccionado = estadoseleccionado;
 	}
 
-	/*
-	 * public void actionListenerInsertarProveedor() {
-	 * 
-	 * try { managerproveedor.insertarProveedor(proveedor);
-	 * listaPrvProveedores=managerproveedor.findAllProveedores(); proveedor=new
-	 * PrvProveedor(); JSFUtil.crearMensajeInfo("Datos de proveedor insertados"); }
-	 * catch (Exception e) { JSFUtil.crearMensajeError(e.getMessage());
-	 * e.printStackTrace(); }
-	 * 
-	 * 
-	 * }
-	 */
-	/*
-	 * public void actionListenerEliminarEstudiante(String cedula) {
-	 * 
-	 * managerEstudiante.eliminarEstudiante(cedula); listaEstudiante=
-	 * managerEstudiante.findAllEstudiantes();
-	 * JSFUtil.crearMensajeInfo("Estudiante eliminado");
-	 * 
-	 * 
-	 * } public void actionListenerSeleccionarEstudiante(Estudiante estudiante) {
-	 * 
-	 * estudianteSeleccionado=estudiante;
-	 * 
-	 * } public void actionListenerActualizarEstudiante() { try {
-	 * managerEstudiante.actualizarEstudiante(estudianteSeleccionado);
-	 * listaEstudiante=managerEstudiante.findAllEstudiantes();
-	 * JSFUtil.crearMensajeInfo("Datos actualizados"); }catch(Exception e) {
-	 * JSFUtil.crearMensajeError(e.getMessage()); e.printStackTrace();
-	 * 
-	 * } }
-	 */
+	
 
 }
