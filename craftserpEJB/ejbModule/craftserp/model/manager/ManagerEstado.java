@@ -60,10 +60,10 @@ public class ManagerEstado {
 		em.persist(estado);
 	}*/
 	
-	public void insertarEstado(String nombre) {
-		SegEstadoCivil estadocivil = new SegEstadoCivil();
-		estadocivil.setNombre(nombre);
-		em.persist(estadocivil);
+	public void insertarEstado(PrdEstado estado) {
+		PrdEstado e= new PrdEstado();
+		e.setNombre(estado.getNombre());
+		em.persist(e);
 	}
 	
 	
