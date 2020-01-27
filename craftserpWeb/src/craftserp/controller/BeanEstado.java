@@ -32,7 +32,7 @@ public class BeanEstado implements Serializable {
 
 	public void actionListenerInsertarEstado() {
 		try {
-			managerestado.InsertarEs(estado);
+			//managerestado.insertarEstado(
 			listaestado = managerestado.findAllEstados();
 			estado = new PrdEstado();
 			JSFUtil.crearMensajeInfo("Datos de estado insertados");
